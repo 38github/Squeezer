@@ -111,3 +111,15 @@ in Europe and other countries.*
 [doc]:            https://github.com/mzuther/Squeezer/tree/master/doc/
 [manual]:         https://github.com/mzuther/Squeezer/raw/master/doc/squeezer.pdf
 [VC++ Redist]:    https://www.visualstudio.com/downloads/
+
+
+## Compile dependencies (Void Linux x86_64):
+clang alsa-lib-devel jack-devel libX11-devel libXcursor-devel libXinerama-devel libXrandr-devel freetype-devel
+
+## Additional dependency if compiling with LTO (at least using Musl libc):
+lld
+
+## Additional dependencies if compiling using musl libc to correct execinfo.h error:
+libglob-devel
+
+## MORE THINGS WERE DONE TO SUCCESSFULLY COMPILE USING MUSL LIBC AND THAT INFORMATION WILL BE ADDED SOON.
